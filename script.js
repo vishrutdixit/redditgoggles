@@ -72,7 +72,7 @@ $.ajax({
                     //console.log(thumbnailurl);
                     //console.log("-------")
                     
-                    $sidebar.append('<a href="#"> <div class="vid-summary row"><div class="preview-holder col-md-4"><span class="helper"> </span> <img class="preview" src="' + thumbnailurl + '" height="75" width="100"/></div><div class="title-holder col-md-8"><p class="vid-title">' + child.data.title +'</p></div></div></a>');
+                    $sidebar.append('<div class="row video-item"> <div class="col-xs-12"> <a class="video-link" href="#"> <div class="vid-summary row"><div class="preview-holder col-md-4"><span class="helper"> </span> <img class="preview" src="' + thumbnailurl + '" height="75" width="100"/></div><div class="title-holder col-md-8"><p class="vid-title">' + child.data.title +'</p></div></div></a> </div> </div>');
                     
                     
                     
@@ -102,7 +102,7 @@ $.ajax({
                   //console.log(thumbnailurl);
                   //console.log("-------")
                     
-                    $sidebar.append('<a class="video-link" href="#"><div class="vid-summary row"><div class="preview-holder col-md-4"><span class="helper"> </span> <img class="preview" src="' + thumbnailurl + '" height="75" width="100"/></div><div class="title-holder col-md-8"><p class="vid-title">' + child.data.title +'</p></div></div></a>');
+                    $sidebar.append('<div class="row video-item"> <div class="col-xs-12"> <a class="video-link" href="#"> <div class="vid-summary row"><div class="preview-holder col-md-4"><span class="helper"> </span> <img class="preview" src="' + thumbnailurl + '" height="75" width="100"/></div><div class="title-holder col-md-8"><p class="vid-title">' + child.data.title +'</p></div></div></a> </div> </div>');
                   
                     
                 } 
@@ -133,9 +133,7 @@ $.ajax({
 });
 
 
-jQuery('a').click(function (event) {
-    console.log('click!');
-});
+
 
   
 

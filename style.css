@@ -3,6 +3,24 @@
 	bottom: 12px;
 }
 
+iframe{
+	border: 2px solid #c9c9c9;
+
+}
+
+.video-link {
+	display: inline block;
+}
+
+.video-embed {
+	width: 940px;
+	height: 480px;
+	border-radius: 5px;
+	display: block;
+	margin: 0;
+
+}
+
 .navbar-center
 {
     position: absolute;
@@ -82,9 +100,9 @@
 
 .main-cont {
 	height: 500px;
-	background-color: grey;
+	background-color: lightgrey;
 	margin: 0; 
-	padding: 0;
+	padding: 15px;
 
 }
 
@@ -196,6 +214,8 @@
 #main-container {
 	padding-left: 0px;
 	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 
