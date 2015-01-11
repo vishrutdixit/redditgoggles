@@ -4,8 +4,35 @@
 }
 
 iframe{
-	border: 2px solid #c9c9c9;
+	
+	display: block;
+	margin: 0 auto;
 
+}
+
+.monitor-svg {
+	position:relative;
+	top: 25px;
+	left: 90px;
+}
+
+.large-text {
+	position: relative;
+	top: 50px;
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+
+}
+
+.small-text {
+	position: relative;
+	top: 50px;
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+}
+
+.monitor-svg.hide {
+	display:none;
 }
 
 .video-link {
@@ -17,10 +44,14 @@ iframe{
 	height: 480px;
 	border-radius: 5px;
 	display: block;
-	margin: 0;
+	margin: 0 auto;
+
 
 }
 
+.video-embed.hide {
+	display: none; 
+}
 .navbar-center
 {
     position: absolute;
@@ -64,11 +95,23 @@ iframe{
 	color: #219CCF;
 }
 
+.get-started {
+	font-family: 'Roboto Slab', serif;
+	font-size: 20px;
+	position: relative;
+	top: 70px;
+	right: 15px;
+	width: 480px;
+	text-align: center;
 
+	-webkit-box-shadow: 3px 4px 4px 1px rgba(6,184,50,1);
+	-moz-box-shadow: 3px 4px 4px 1px rgba(6,184,50,1);
+	box-shadow: 3px 4px 4px 1px rgba(6,184,50,1);
+}
 
 .navbar-default {
 	
-	border-bottom: 1px solid grey;
+	border-bottom: 2px solid grey;
 }
 
 
@@ -100,10 +143,11 @@ iframe{
 
 .main-cont {
 	height: 500px;
-	background-color: lightgrey;
+	background-color: #bdc3c7;
+	/*background-color: #1B1B1B; */
 	margin: 0; 
 	padding: 15px;
-
+	
 }
 
 .sidebar:hover {
@@ -186,7 +230,10 @@ iframe{
 	width: 38px;
 	height: 38px;
 	
+	
 }
+
+
 
 #btn-search:focus{
 	outline: none;
@@ -196,7 +243,26 @@ iframe{
 	width: 400px;
 }
 
+.tweet-reminder {
+	color: #bdc3c7;
+	text-align: center;
+	position:relative;
+	top: 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	
+}
 
+.tweet-link {
+	color: #3498db;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+
+}
+
+.tweet-link:hover {
+	color: #ecf0f1;
+}
 
 .form-control{
 	border-radius: 0px;
@@ -207,6 +273,14 @@ iframe{
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 	background-color: #f0f0f0;
+}
+
+.footer {
+	height: 90px;
+	background-color: #24282d;
+	width: 100wh;
+	padding: 0px;
+	margin: 0px;
 }
 
 
@@ -226,6 +300,14 @@ iframe{
 
 
 
+h1 {
+	color: white;
+}
+
+
+
+
+
 /* custom scrollbar */
 
 #sidebar::-webkit-scrollbar {
@@ -241,8 +323,8 @@ iframe{
  
 
 #sidebar::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     
 
     background: rgba(169, 164, 169, .4); 
