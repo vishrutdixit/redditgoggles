@@ -65,6 +65,16 @@ iframe{
 	margin-left: 30%;
 }
 
+.redirect-focus {
+	color: green; 
+	text-decoration: none;
+}
+
+.redirect-focus:hover {
+	color: #1abc9c;
+	text-decoration:none;
+}
+
 #sidebar-toggle {
 	border-radius:0px;
 	border: 1px solid #f8f8f8;
@@ -96,7 +106,7 @@ iframe{
 }
 
 .get-started {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 20px;
 	position: relative;
 	top: 70px;
@@ -149,6 +159,7 @@ iframe{
 	padding: 15px;
 	
 }
+
 
 .sidebar:hover {
 
@@ -244,7 +255,7 @@ iframe{
 }
 
 .tweet-reminder {
-	color: #bdc3c7;
+	color: grey;
 	text-align: center;
 	position:relative;
 	top: 20px;
@@ -254,14 +265,19 @@ iframe{
 }
 
 .tweet-link {
-	color: #3498db;
-	font-family: 'Lato', sans-serif;
+	color: grey;
+	font-family: 'Roboto Slab', sans-serif;
 	font-size: 18px;
 
 }
 
 .tweet-link:hover {
+	/*
 	color: #ecf0f1;
+	color: #bdc3c7;
+	*/
+	text-decoration: none;
+
 }
 
 .form-control{
@@ -277,7 +293,7 @@ iframe{
 
 .footer {
 	height: 90px;
-	background-color: #24282d;
+	background-color: #EEEEEE;
 	width: 100wh;
 	padding: 0px;
 	margin: 0px;
