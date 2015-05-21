@@ -176,7 +176,7 @@ console.log(url);
 $.ajax({
         type: 'GET',
         // url: url,
-        url: baseURL + subredditURL + 
+        url: baseURL + subredditURL + './json',
 
         
 
