@@ -1,3 +1,5 @@
+var isSearch = false; 
+
 $(document).ready(function () {
     $('.svg-container').hide().fadeIn(1500);
     //	$('.welcome-text').hide().fadeIn(3000);
@@ -124,7 +126,7 @@ $(document).on("click", ".vid-summary", function(e) {
 
 
 $("#sidebar-toggle").click(function(){
-  toggleSidebar();
+  if(isSearch) toggleSidebar();
 });
 
 $( "#sidebar-toggle" ).hover(function() {
@@ -165,19 +167,31 @@ if(input === ''){
   var url = 'http://www.reddit.com/' + input + '.json';
 }
 else {
-  var url = baseurl + input + '/.json';
+  var url = baseurl + input + '/.json' ;
 }
 
 console.log(url);
 
-
+function grabData(baseB, sg, sdsf, s) {
+  url = fjs fs fdsgsfs
+  
+}
 
 $.ajax({
         type: 'GET',
-        url: url,
+        // url: url,
+        url: baseURL + subredditURL + 
+
+        
+
         success: function(data){
-          //console.log(data);
+          console.log(data);
           $sidebar.empty();
+          
+          var next = data.data.after; 
+         
+          //console.log(next);
+
           $.each(data.data.children, function(i, child){
               
                 //variables needed
@@ -187,6 +201,7 @@ $.ajax({
                 var thumbnailurl; 
                 var index2; //used for second round to filter out extraneous stuff after the video ID
                 
+
 
                 
                 if(child.data.domain === 'youtube.com'){
@@ -243,7 +258,7 @@ $.ajax({
                     }
                   
                   thumbnailurl = thumbnailbase1 + suburl + thumbnailbase2;
-                  //console.log(thumbnailurl);
+                  console.log(thumbnailurl);
                   //console.log("-------")
                     
                     $sidebar.append('<div class="row video-item"> <div class="col-xs-12"> <a class="video-link" href="#"> <div class="vid-summary row"><div class="preview-holder col-md-4"><span class="helper"> </span> <img class="preview" src="' + thumbnailurl + '" height="75" width="100"/></div><div class="title-holder col-md-8"><p class="vid-title">' + child.data.title +'</p></div></div></a> </div> </div>');
@@ -255,6 +270,7 @@ $.ajax({
                 
             });
             
+            $sidebar.append('<a href="#"><div class="load-more row"> Load More </div></a>');
             
             if ($( ".sidebar" ).is( ".hide" ) ) {
             
@@ -264,9 +280,8 @@ $.ajax({
             $('.row.video-embed').removeClass('hide');
 
             NProgress.done();
+            isSearch = true; 
 
-            
-              
               //counter+=25;
               //if(data.data.after === null) isMore = false; 
             

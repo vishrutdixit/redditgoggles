@@ -193,6 +193,15 @@ iframe{
 
 }
 
+.load-more {
+	height: 75px;
+	border-bottom:  1px solid black;
+	
+
+	white-space: nowrap;
+    text-align: center; 
+}
+
 .helper {
     display: inline-block;
     height: 100%;
