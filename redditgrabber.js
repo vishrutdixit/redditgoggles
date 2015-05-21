@@ -172,10 +172,6 @@ else {
 
 console.log(url);
 
-function grabData(baseB, sg, sdsf, s) {
-  url = fjs fs fdsgsfs
-  
-}
 
 $.ajax({
         type: 'GET',
